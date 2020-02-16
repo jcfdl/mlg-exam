@@ -3,7 +3,8 @@ $(function() {
 		$('.load-icon').show();
 	}
 	function hideIcon() {
-		$('.load-icon').fadeOut(1000);
+		// $('.load-icon').fadeOut(3000);
+		setTimeout(function(){ $('.load-icon').hide(); }, 2000);
 	}
 	$(document).on("cut copy paste","#ref_code",function(e) {
         e.preventDefault();
